@@ -1,0 +1,126 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  --primary: #646cff;
+  --accent: #ff4757; /* Rouge Noël */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover { color: #747bff; }
+  button { background-color: #f9f9f9; }
+}
+
+body {
+  margin: 0;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #242424, #1a1a2e); /* Thème sombre */
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 { font-size: 3.2em; line-height: 1.1; margin: 0; color: var(--accent); }
+h2 { color: var(--primary); }
+
+.circular-hero { font-size: 2em; margin: 1rem 0; }
+
+main { max-width: 800px; margin: 0 auto; padding: 2rem; }
+
+section { margin-bottom: 3rem; padding: 2rem; border-radius: 12px; background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); }
+
+.quiz {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.quiz button {
+  display: block;
+  width: 100%;              /* prend toute la largeur du conteneur */
+  max-width: 420px;         /* même longueur visuelle pour toutes les options */
+  margin: 0.5rem auto;      /* centre le bouton */
+  padding: 0.8rem 1.2rem;
+  background: #646cff;
+  color: #fff;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  box-sizing: border-box;   /* padding inclus dans la largeur */
+}
+
+.quiz button:hover {
+  background: #535bf2;
+  transform: translateY(-1px);
+}
+
+.timeline {
+  position: relative;
+}
+.timeline-items {
+  display: flex; flex-direction: column; gap: 1rem;
+}
+.timeline .item {
+  padding: 1rem; background: linear-gradient(90deg, var(--primary), var(--accent)); border-radius: 8px;
+  animation: slideIn 0.5s ease-out;
+}
+@keyframes slideIn { from { opacity: 0; transform: translateX(-20px); } to { opacity: 1; transform: translateX(0); } }
+
+footer {
+  text-align: center; padding: 2rem; 
+  position: relative; overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  h1 { font-size: 2em; }
+  section { padding: 1rem; }
+}
+
+.fb-section {
+  max-width: 480px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.fb-hook {
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.fb-button {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  border-radius: 999px;
+  background: #1877f2;        /* bleu Facebook */
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.2s;
+}
+
+.fb-button:hover {
+  background: #145bcc;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+}
