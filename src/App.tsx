@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import CircularText from './components/CircularText';
 import './App.css';
 import Snowfall from "react-snowfall";
+import { Analytics } from "@vercel/analytics/react"
 
 const App: React.FC = () => {
   const [quizStep, setQuizStep] = useState(0);
@@ -80,6 +81,7 @@ const App: React.FC = () => {
 
   return (
     <>
+      <Analytics />
       <Snowfall
         style={{
           position: "fixed",
