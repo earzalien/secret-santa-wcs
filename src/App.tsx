@@ -8,6 +8,7 @@ const App: React.FC = () => {
   const [quizStep, setQuizStep] = useState(0);
   const [score, setScore] = useState(0);
   const [showResult, setShowResult] = useState(false);
+  const [snow, setSnow] = useState(false);
 
   const quizQuestions = [
     {
@@ -79,18 +80,22 @@ const App: React.FC = () => {
     }
   };
 
+  const activeSnow = () => {
+    setSnow((oldValue) => !oldValue)
+  }
   return (
     <>
       <Analytics />
-      <Snowfall
+      {snow && <div>
+        <Snowfall
         style={{
           position: "fixed",
           width: "100vw",
           height: "100vh",
           zIndex: 1,
         }}
-      />
-      <header>
+      /></div>}
+      <header onClick={activeSnow}>
         <h1>🎅 Secret Santa</h1>
         <p>Celui qui a réussi à faire dire “c’est le fameux zizi” à Cindy.</p>
         <CircularText text="MICKAEL*LAMBERT*" className="circular-hero" />
