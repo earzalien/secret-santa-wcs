@@ -59,6 +59,15 @@ const App: React.FC = () => {
       correct: 1,
     },
     {
+      question: "Quelle est le coût de ses cours particuliers ?",
+      options: [
+        "Gratuit !",
+        "50 € / heure",
+        "Une bière au Judor (n'y aller pas, un lapin vous y attends)",
+      ],
+      correct: 1,
+    },
+    {
       question: "Quelle est la vraie source de ses super pouvoirs ?",
       options: [
         "Le café",
@@ -106,9 +115,9 @@ const App: React.FC = () => {
           {!showResult ? (
             <div>
               <p>{quizQuestions[quizStep].question}</p>
-              {quizQuestions[quizStep].options.map((opt, i) => (
+              {quizQuestions[quizStep].options.map((option, i) => (
                 <button key={i} onClick={() => QuizAnswer(i)}>
-                  {opt}
+                  {option}
                 </button>
               ))}
               <p>
@@ -118,7 +127,7 @@ const App: React.FC = () => {
           ) : (
             <div>
               <h3>
-                Résultat : {score}/{quizQuestions.length} –{" "}
+                Résultat : {score}/{quizQuestions.length} -{" "}
                 {score === quizQuestions.length
                   ? "Expert Mickaël ! 🎉"
                   : "Revois tes bases avec Mickaël 😉"}
