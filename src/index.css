@@ -6,19 +6,11 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
   --primary: #646cff;
-  --accent: #ff4757; /* Rouge Noël */
+  --accent: #ff4757;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    background-color: #ffffff;
-  }
-  a:hover { color: #747bff; }
-  button { background-color: #f9f9f9; }
 }
 
 body {
@@ -26,7 +18,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background: linear-gradient(135deg, #242424, #1a1a2e); /* Thème sombre */
+  background: linear-gradient(135deg, #242424, #1a1a2e);
 }
 
 header {
@@ -54,9 +46,9 @@ section { margin-bottom: 3rem; padding: 2rem; border-radius: 12px; background: r
 
 .quiz button {
   display: block;
-  width: 100%;              /* prend toute la largeur du conteneur */
-  max-width: 420px;         /* même longueur visuelle pour toutes les options */
-  margin: 0.5rem auto;      /* centre le bouton */
+  width: 100%;
+  max-width: 420px;
+  margin: 0.5rem auto;
   padding: 0.8rem 1.2rem;
   background: #646cff;
   color: #fff;
@@ -64,8 +56,8 @@ section { margin-bottom: 3rem; padding: 2rem; border-radius: 12px; background: r
   border: 1px solid transparent;
   text-align: center;
   cursor: pointer;
-  transition: background 0.2s, transform 0.1s;
-  box-sizing: border-box;   /* padding inclus dans la largeur */
+  transition: background-color 0.2s, transform 0.1s;
+  box-sizing: border-box;
 }
 
 .quiz button:hover {
@@ -110,12 +102,12 @@ footer {
   display: inline-block;
   padding: 0.8rem 1.6rem;
   border-radius: 999px;
-  background: #1877f2;        /* bleu Facebook */
+  background: #1877f2;
   color: #fff;
   font-weight: 600;
   text-decoration: none;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.2s;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.2s;
 }
 
 .fb-button:hover {

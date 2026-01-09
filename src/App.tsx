@@ -52,8 +52,8 @@ const App: React.FC = () => {
     {
       question: "Que dit-il le plus souvent en cours ?",
       options: [
-        "“Push sur main direct, on s’en fout.”",
-        "“Écris des trucs, test et tu verras.”",
+        "“Push sur main direct, on s'en fout.”",
+        "Test des trucs et tu verras, tu vas pas casser internet.”",
         "“Putain le chien a chié sur le tapis !”",
       ],
       correct: 1,
@@ -95,7 +95,7 @@ const App: React.FC = () => {
   return (
     <>
       <Analytics />
-      {snow && <div>
+      {snow && <>
         <Snowfall
         style={{
           position: "fixed",
@@ -103,7 +103,7 @@ const App: React.FC = () => {
           height: "100vh",
           zIndex: 1,
         }}
-      /></div>}
+      /></>}
       <header onClick={activeSnow}>
         <h1>🎅 Secret Santa</h1>
         <p>Celui qui a réussi à faire dire “c’est le fameux zizi” à Cindy.</p>
@@ -113,7 +113,7 @@ const App: React.FC = () => {
         <section className="quiz">
           <h2>Quiz : Connais-tu vraiment Mickaël ?</h2>
           {!showResult ? (
-            <div>
+            <>
               <p>{quizQuestions[quizStep].question}</p>
               {quizQuestions[quizStep].options.map((option, i) => (
                 <button key={i} onClick={() => QuizAnswer(i)}>
@@ -123,9 +123,9 @@ const App: React.FC = () => {
               <p>
                 Question {quizStep + 1}/{quizQuestions.length} (Score: {score})
               </p>
-            </div>
+            </>
           ) : (
-            <div>
+            <>
               <h3>
                 Résultat : {score}/{quizQuestions.length} -{" "}
                 {score === quizQuestions.length
@@ -141,7 +141,7 @@ const App: React.FC = () => {
               >
                 Rejouer
               </button>
-            </div>
+            </>
           )}
         </section>
         <section className="fb-section">
