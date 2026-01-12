@@ -27,7 +27,7 @@ const App: React.FC = () => {
       correct: 0,
     },
     {
-      question: "Quelle est sa pizza préférée ?",
+      question: "Quelle est son ex-pizza préférée ?",
       options: ["Reine", "4 fromages", "Océane"],
       correct: 2,
     },
