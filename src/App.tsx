@@ -159,17 +159,17 @@ const App: React.FC = () => {
         </section>
         <section>
           <h2>Oseras-tu appuyer sur un bouton ?</h2>
-        <iframe width="110" height="100" src="https://www.myinstants.com/instant/bonne-annee-bande-dencule-chtio-taz-5437/embed/" frameborder="0" scrolling="no"></iframe>
-        <iframe width="110" height="100" src="https://www.myinstants.com/instant/fart-button/embed/" frameborder="0" scrolling="no"></iframe>
-        <iframe width="110" height="100" src="https://www.myinstants.com/instant/ouille-aie-14913/embed/" frameborder="0" scrolling="no"></iframe>
+        <iframe width="110" height="100" src="https://www.myinstants.com/instant/bonne-annee-bande-dencule-chtio-taz-5437/embed/" frameBorder="0" scrolling="no"></iframe>
+        <iframe width="110" height="100" src="https://www.myinstants.com/instant/fart-button/embed/" frameBorder="0" scrolling="no"></iframe>
+        <iframe width="110" height="100" src="https://www.myinstants.com/instant/ouille-aie-14913/embed/" frameBorder="0" scrolling="no"></iframe>
           <br /><br />
-          <iframe width="110" height="100" src="https://www.myinstants.com/instant/alerte-au-gogole/embed/" frameborder="0" scrolling="no"></iframe>
-          <iframe width="110" height="100" src="https://www.myinstants.com/instant/fart/embed/" frameborder="0" scrolling="no"></iframe>
-          <iframe width="110" height="100" src="https://www.myinstants.com/instant/couscous-merguez-9601/embed/" frameborder="0" scrolling="no"></iframe>
+          <iframe width="110" height="100" src="https://www.myinstants.com/instant/alerte-au-gogole/embed/" frameBorder="0" scrolling="no"></iframe>
+          <iframe width="110" height="100" src="https://www.myinstants.com/instant/fart/embed/" frameBorder="0" scrolling="no"></iframe>
+          <iframe width="110" height="100" src="https://www.myinstants.com/instant/couscous-merguez-9601/embed/" frameBorder="0" scrolling="no"></iframe>
           <br /><br />
-          <iframe width="110" height="100" src="https://www.myinstants.com/instant/hugooo-89724/embed/" frameborder="0" scrolling="no"></iframe>
-          <iframe width="110" height="100" src="https://www.myinstants.com/instant/quoi-de-neuf-dans-ton-troue-99428/embed/" frameborder="0" scrolling="no"></iframe>
-          <iframe width="110" height="100" src="https://www.myinstants.com/instant/petit-poney/embed/" frameborder="0" scrolling="no"></iframe>
+          <iframe width="110" height="100" src="https://www.myinstants.com/instant/hugooo-89724/embed/" frameBorder="0" scrolling="no"></iframe>
+          <iframe width="110" height="100" src="https://www.myinstants.com/instant/quoi-de-neuf-dans-ton-troue-99428/embed/" frameBorder="0" scrolling="no"></iframe>
+          <iframe width="110" height="100" src="https://www.myinstants.com/instant/petit-poney/embed/" frameBorder="0" scrolling="no"></iframe>
 
         </section>
       </main>
